@@ -5,6 +5,14 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFAIK", "AFAIK\AFAIK.csproj", "{884237F7-6DC2-4DBE-84D9-9A7A60AABB91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{D8930D16-D6EE-40A6-9EFA-9EB0EED4D7DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Additionals", "Additionals\Additionals.csproj", "{826889C5-0DBF-401C-A605-94A0622511EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installation", "Installation", "{FEC0A34A-0166-4362-BC89-94E7E4F344EF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AFAIKInstaller", "AFAIKInstaller\AFAIKInstaller.vdproj", "{CA7E3EFD-8726-4703-AA33-5C5035AD1B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +23,20 @@ Global
 		{884237F7-6DC2-4DBE-84D9-9A7A60AABB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884237F7-6DC2-4DBE-84D9-9A7A60AABB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{884237F7-6DC2-4DBE-84D9-9A7A60AABB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826889C5-0DBF-401C-A605-94A0622511EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826889C5-0DBF-401C-A605-94A0622511EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826889C5-0DBF-401C-A605-94A0622511EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826889C5-0DBF-401C-A605-94A0622511EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7E3EFD-8726-4703-AA33-5C5035AD1B28}.Debug|Any CPU.ActiveCfg = Debug
+		{CA7E3EFD-8726-4703-AA33-5C5035AD1B28}.Debug|Any CPU.Build.0 = Debug
+		{CA7E3EFD-8726-4703-AA33-5C5035AD1B28}.Release|Any CPU.ActiveCfg = Release
+		{CA7E3EFD-8726-4703-AA33-5C5035AD1B28}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{826889C5-0DBF-401C-A605-94A0622511EC} = {D8930D16-D6EE-40A6-9EFA-9EB0EED4D7DB}
+		{CA7E3EFD-8726-4703-AA33-5C5035AD1B28} = {FEC0A34A-0166-4362-BC89-94E7E4F344EF}
 	EndGlobalSection
 EndGlobal

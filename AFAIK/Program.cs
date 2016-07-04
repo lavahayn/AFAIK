@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Additionals;
+using AFAIK.GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace AFAIK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MultiFormContext(new frmMain()));
         }
     }
 }
