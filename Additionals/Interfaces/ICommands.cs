@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFAIK.Solution
+namespace Additionals.Interfaces
 {
-    class Solution
+    public interface ICommands
     {
+        bool CreateNewSolution();
     }
 }

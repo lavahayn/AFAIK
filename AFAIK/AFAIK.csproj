@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\frmSolutionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSolutionManager.Designer.cs">
+      <DependentUpon>frmSolutionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Solution\CommandManager.cs" />
     <Compile Include="Solution\Commands.cs" />
     <Compile Include="GUI\frmMain.cs">
@@ -54,32 +65,22 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmNewProject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmNewProject.Designer.cs">
-      <DependentUpon>frmNewProject.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solution\Serializable\SolutionTemplate.cs" />
     <Compile Include="Solution\SolutionVersion.cs" />
-    <Compile Include="Solution\Solution.cs" />
+    <Compile Include="Solution\SolutionManager.cs" />
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmNewProject.resx">
-      <DependentUpon>frmNewProject.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmSolutionManager.resx">
+      <DependentUpon>frmSolutionManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,6 +99,9 @@
       <Project>{826889C5-0DBF-401C-A605-94A0622511EC}</Project>
       <Name>Additionals</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

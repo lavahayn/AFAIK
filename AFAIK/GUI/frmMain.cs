@@ -24,5 +24,10 @@ namespace AFAIK.GUI
         {
             CommandManager.Execute(Commands.CreateNewProject);
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            CommandManager.Execute(Commands.SaveProject);
+        }
     }
 }

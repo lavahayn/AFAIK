@@ -36,15 +36,12 @@
             this.statusLblToolstrip = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripProgressBar();
             this.mainContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.leftPanel = new System.Windows.Forms.Panel();
-            this.rightPanel = new System.Windows.Forms.Panel();
-            this.centerPanel = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.SaveBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrup.SuspendLayout();
             this.mainStatusBar.SuspendLayout();
-            this.leftPanel.SuspendLayout();
-            this.centerPanel.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenuStrup
@@ -102,58 +99,34 @@
             this.mainContextMenu.Name = "mainContextMenu";
             this.mainContextMenu.Size = new System.Drawing.Size(61, 4);
             // 
-            // leftPanel
+            // menuStrip1
             // 
-            this.leftPanel.Controls.Add(this.listView1);
-            this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.leftPanel.Location = new System.Drawing.Point(0, 24);
-            this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(194, 500);
-            this.leftPanel.TabIndex = 3;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SaveBtn,
+            this.aToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1038, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // rightPanel
+            // SaveBtn
             // 
-            this.rightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightPanel.Location = new System.Drawing.Point(838, 24);
-            this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(200, 500);
-            this.rightPanel.TabIndex = 4;
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(12, 20);
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // centerPanel
+            // aToolStripMenuItem
             // 
-            this.centerPanel.Controls.Add(this.richTextBox1);
-            this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerPanel.Location = new System.Drawing.Point(194, 24);
-            this.centerPanel.Name = "centerPanel";
-            this.centerPanel.Size = new System.Drawing.Size(644, 500);
-            this.centerPanel.TabIndex = 5;
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(194, 500);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(644, 500);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 547);
-            this.Controls.Add(this.centerPanel);
-            this.Controls.Add(this.rightPanel);
-            this.Controls.Add(this.leftPanel);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.mainStatusBar);
             this.Controls.Add(this.mainMenuStrup);
             this.MainMenuStrip = this.mainMenuStrup;
@@ -164,8 +137,8 @@
             this.mainMenuStrup.PerformLayout();
             this.mainStatusBar.ResumeLayout(false);
             this.mainStatusBar.PerformLayout();
-            this.leftPanel.ResumeLayout(false);
-            this.centerPanel.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,10 +153,8 @@
         private System.Windows.Forms.ContextMenuStrip mainContextMenu;
         private System.Windows.Forms.ToolStripStatusLabel statusLblToolstrip;
         private System.Windows.Forms.ToolStripProgressBar toolStripStatusLabel1;
-        private System.Windows.Forms.Panel leftPanel;
-        private System.Windows.Forms.Panel rightPanel;
-        private System.Windows.Forms.Panel centerPanel;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem SaveBtn;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
     }
 }
